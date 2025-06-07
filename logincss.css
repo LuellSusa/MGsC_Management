@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #dfdfdf;
+}
+
+/* LOG IN BOX NI*/
+.login-box{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 300px;
+    padding: 20px;  
+    height: 300px;
+}
+
+.login-header{
+    text-align: center;
+    margin:20px 0 20px 0;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* SA MGA INPUTS NI NGA AREA*/
+.input-box .input-field{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.input-box .input-field:focus{
+    outline: none;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+     transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+::placeholder{
+    color: #999;
+    font-weight: 500;
+}
+
+
+/* UBOS NANI SA USER-PASS*/
+.forgot{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    color:#444343;
+    font-size: 14px;    
+}
+
+#check{
+    margin-right: 10px;
+}
+
+a{
+    color: #444343;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+
+/* ALL ABOUT BUTTONS NANI DIRI*/
+.submit-btn{
+    width: 100%;
+    height:40px;
+    background-color: #484747;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 30px;
+}
+
+.submit-btn:hover{
+    background-color: #333;
+}
+
+.input-submit label{
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    color:#fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   
+    cursor:pointer;
+    font-size: 14px;
+}
+
+
+/* From Uiverse.io by PriyanshuGupta28 */ 
+.input[type="checkbox"] {
+  display: none;
+}
+
+
+  /* Style for the custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #444343;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  top: 3px;
+}
+
+  /* Style for the custom checkmark */
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #444343;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+  /* Show the checkmark when checkbox is checked */
+.input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+
+
